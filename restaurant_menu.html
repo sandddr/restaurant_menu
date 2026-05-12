@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restaurant</title>
+
+    <style>
+      body {
+          background-color: #fff8e7;
+          font-family: Arial, sans-serif;
+          margin: 20px;
+      }
+
+      #header-img {
+          width: 100%;
+          border-radius: 10px;
+      }
+
+      h1 {
+          color:darkred;
+          text-align:center;
+      }
+
+      nav {
+          text-align: center;
+          margin: 20px 0;
+      }
+
+      nav a {
+          color: brown;
+          text-decoration: none;
+          margin: 0 10px;
+      }
+
+      article {
+          border: 1px solid #ddd;
+          padding: 15px;
+          margin: 15px 0;
+          border-radius: 8px;
+          background-color: white;
+      }
+
+      article img {
+          width: 200px;
+          border-radius: 8px;
+      }
+
+      input[type="submit"] {
+          background: #8b7355;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+
+      footer {
+          text-align: center;
+          margin-top: 40px;
+          padding: 15px;
+          background: #333;
+          color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <img id="header-img" src="https://img.freepik.com/free-photo/traditional-salad-with-pieces-medium-rare-grilled-ahi-tuna-sesame-with-fresh-vegetable-salad-rice-plate_2829-18465.jpg?semt=ais_hybrid&w=740&q=80" alt="Restaurand header img">
+      <h1>Restaurant</h1>
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#order-form">Place Your Order</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="menu">
+        <h2>Menu</h2>
+        
+        <article>
+          <img src="https://www.recipetineats.com/tachyon/2016/05/Caesar-Salad_7-SQ.jpg" alt="Caesar Salad">
+          <h3>Caesar Salad</h3>
+          <p>Classic Caesar salad featuring crisp romaine lettuce, crunchy croutons, and savory Parmesan cheese, all tossed in a creamy, tangy, and garlic-forward dressing.</p>
+          <p><i>$11.20</i></p>
+        </article>
+
+        <article>
+          <img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipes%2F2023-06-chicken-alfredo-pasta-reshoot%2Fchicken-alfredo-pasta-1-horizontal_e45173-crop" alt="Alfredo Pasta">
+          <h3>Alfredo Pasta</h3>
+          <p>Fettuccine tossed in rich alfredo sauce with parmesan and herbs.</p>
+          <p><i>$14.49</i></p>
+        </article>
+
+        <article>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX2w-6ljxAJtEImAJ4zBsRnou1CoSAVmgvQw&s" alt="Margherita Pizza">
+          <h3>Margherita Pizza</h3>
+          <p>Fresh mozzarella, fresh basil & our authentic pizza sauce.</p>
+          <p><i>$15.00</i></p>
+        </article>
+
+      </section>
+
+      <section id="order-form">
+        <h2>Place Your Order</h2>
+
+        <form>
+          <label for="caesarsalad_qty">Caesar Salad ($11.20): </label>
+          <input type="number" id="caesarsalad_qty" name="caesarsalad_qty" min="0" value="0">
+
+          <label for="alfredopasta_qty">Alfredo Pasta ($14.49): </label>
+          <input type="number" id="alfredopasta_qty" name="alfredopasta_qty" min="0" value="0">
+
+          <label for="margheritapizza_qty">Margherita Pizza ($15.00): </label>
+          <input type="number" id="margheritapizza_qty" name="margheritapizza_qty" min="0" value="0">
+
+          <label>Drinks (choose one): </label>
+          <label><input type="radio" name="side" value="cocacola"> Coca-Cola</label>
+          <label><input type="radio" name="side" value="lemontea"> Lemon Tea</label>
+          <label><input type="radio" name="side" value="coffee"> Coffee</label>
+
+          <label for="special">Special requests (allergies, notes, etc.): </label>
+          <textarea id="special" name="special" rows="3" placeholder="Any special requests for your order?"></textarea>
+
+          <input type="submit" value="Go To Checkout">
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made with love by @sandddr</p>
+    </footer>
+
+  </body>
+</html>
